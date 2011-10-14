@@ -33,6 +33,166 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	font-family: arial;
+	color: #949596;
+	margin:0 auto;
+}
+
+
+h1 {font-size:24px;
+	font-weight:bold;
+	line-height:1.3em;
+	color:#744918;
+	text-transform:uppercase;}
+	
+h2 {font-size:16px;
+	color:#744918;
+	line-height:2em;
+	padding-bottom:15px;
+	text-transform:uppercase;}
+	
+p {font-size:11px;
+	line-height:1.5em;
+	padding-bottom:15px;}
+
+#main-menu  {
+	position: absolute;
+    top:120px;
+	left:0px;
+    right:0px;
+    background-color:#744918;
+    padding:0 px;
+    margin:0 auto;
+ }
+  #main-menu li a { 
+    float:left;
+  }
+	#main-menu li a:hover { color:#b7c850; }
+  #main-menu li.last { border:0px; }
+  #main-menu li a { 
+	display:block; 
+    padding:15px 20px;
+    font-size:20px;
+	margin: -8px;
+    color:white;
+    text-decoration:none;
+	text-transform: uppercase;
+	font-weight: bold;
+  }
+
+#top-nav {
+	position:absolute;
+	top:30px;
+	right:80px;
+	color:#744918;
+	text-decoration:none;
+	font-size:14px;
+	}
+	
+
+#top-nav a {
+	color:#744918;
+	text-decoration:none;
+	font-size:14px;
+	margin: 0 auto;
+}
+
+#site-wrapper {
+	padding-left: 20px;
+	margin: 0;
+	background-color: #eff4da;
+}
+#site-header h1 a { 
+  	display:block;	  
+  	position:top-left;
+	height:123px;
+  	background:url(images/logo.png) no-repeat left top;
+	background-color: #eff4da;
+	text-indent:-9999px;
+	}
+
+
+#content-wrapper {
+	background-color:#ffffff;
+	top: 30px;
+	margin: 20px;
+	position:relative;
+	width:1000px
+}
+#content {
+	background-color:white;
+	position:relative;
+	width:850px;
+	padding-left: 20px;
+}
+
+#page {
+	position:absolute;
+	top:0px;
+	left:0;
+	width: 400px;
+}
+#sidebar {
+	position:absolute;
+	top:0px;
+	right:0px;
+	width: 400px;
+}
+
+#siderbar h1 {
+	font-size:16px;
+	color:#744918;
+	line-height:2em;
+	padding-bottom:15px;
+	text-transform:uppercase;
+}
+
+#sidebar img {
+	padding-top:5px;
+	padding-bottom:5px;}
+
+#footer-wrapper {
+	position:relative;
+	top:600px;
+	right:0;
+	background-color: #744918;
+	clear:both;
+	height: 150px;
+	padding: 20px;
+}
+
+#site-footer h1 {
+	color:#cdc2ab;
+	text-transform:uppercase;
+	font-size:14px;
+}
+
+#site-footer p {
+	color:white;
+}
+
+#site-footer {
+	position:relative;
+	bottom:0;
+	padding: 10px;
+}
+
+#footer-contact {
+	position:absolute;
+	top:0;
+	left:0;
+	width: 200px;
+}
+
+#footer-follow {
+	position: absolute;
+	top:0;
+	right:0px;
+	float:right;
+}
+
+#footer-follow img {
+	float:left;
 }
 ol, ul {
 	list-style: none;
