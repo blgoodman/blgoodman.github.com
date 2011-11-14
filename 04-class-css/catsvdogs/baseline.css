@@ -31,12 +31,27 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
+	@media screen and (max-width:940px) 
+  {
+    #site-header h1 { float:none; width:50%; margin:0 1%; }
+    img {width: 300px;}
+    #articles .article {width: 300px;}
+  }
+
+	@media screen and (max-width:640px) 
+  {
+    #main-nav li a {color: red; font-size: 1.5em; }
+    img {width: 300px;}
+    #articles .article {width: 300px;}
+  }
+	
 body {
 	line-height: 1.3em;
 	font-family: times;
 	color: black;
 	margin:0 auto;
-	font-size:14px
+	font-size:14px;
 	line-spacing: 1.3em;}
 
 h1 {
@@ -48,9 +63,10 @@ h1 {
 #header-wrapper {
 	position: relative;
 	height: 95px;
-	width: 445px;
+	width: 100%;
 	padding: 20px;
-	margin: 0 auto;}	
+	margin: 0 auto;
+	max-width:1024px;}	
 	
 #site-header h1 { 
   	display:block;	  
@@ -64,7 +80,10 @@ h1 {
 	
 #menu-wrapper {
 	position: relative;
-	clear: both;}
+	clear: both;
+	width: 100%;
+	margin: 0 auto;
+	}
 	
 	#main-nav li a:hover { 
 		color:#777777;}
@@ -73,7 +92,7 @@ h1 {
 	height: 40px;
 	border-top:4px solid black;
 	border-bottom:4px solid black;
-	margin:0 auto;}
+	margin: 0 auto;}
 
 #main-nav li a {
 	display:inline-block;
@@ -86,13 +105,18 @@ h1 {
 	padding: 10px;
 	background-color:white;}
 
+nav {
+	margin: 0 auto;
+	}
 	
 #main-nav li {
-	float:left;}
+	float:left;
+	}
 
 #content-wrapper {
 	position: relative;
-	width: 1060px;
+	max-width: 1060px;
+	width: 100%;
 	clear: both;
 	margin: 0 auto;}
 	
@@ -100,8 +124,7 @@ article {
 	width: 450px;
 	padding: 10px;
 	float: left;
-	display: inline-block;
-	margin: 0 auto;}
+	display: inline-block;}
 
 .article {
 	display: inline-block;}
