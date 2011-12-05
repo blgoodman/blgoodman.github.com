@@ -34,15 +34,17 @@ footer, header, hgroup, menu, nav, section {
 
 @font-face {
     font-family: 'LeagueGothicRegular';
-    src: url('League_Gothic-webfont.eot');
-    src: url('League_Gothic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('League_Gothic-webfont.woff') format('woff'),
-         url('League_Gothic-webfont.ttf') format('truetype'),
-         url('League_Gothic-webfont.svg#LeagueGothicRegular') format('svg');
+    src: url('fonts/League_Gothic-webfont.eot');
+    src: url('fonts/League_Gothic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/League_Gothic-webfont.woff') format('woff'),
+         url('fonts/League_Gothic-webfont.ttf') format('truetype'),
+         url('fonts/League_Gothic-webfont.svg#LeagueGothicRegular') format('svg');
     font-weight: normal;
     font-style: normal;
 
 }
+
+
 
 body {
 	line-height: 1.3em;
@@ -214,9 +216,10 @@ h1 {
 	
 #cover-flow {
 	display: block;
-	width: 500px;
-	height: 200px;
+	width: 600px;
+	height: 300px;
 	margin: 0 auto;
+	padding: 20px 0 0 0;
 	}
 
 #content {
@@ -323,6 +326,62 @@ article p a:hover {
 	display:block;
 	padding: 10px 0 0 0;
 	}
+
+#albums {
+	width: 600px;
+	background-color: red;
+	}
+	
+.album {
+	display: block;
+	padding: 30px 0 30px 0;
+	border-bottom: solid #b0c752;
+	background-color:blue;
+	}
+	
+	
+	
+
+#albums h1 {
+	display: block;
+	padding: 10px 0 20px 0;
+	color: #363937;
+	font-size: 2em;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+	}
+
+.album-info h2 {
+	color: #60b7c0;
+	font-family: 'LeagueGothicRegular';
+	font-size: 2em;
+	line-height: 1em;
+	text-decoration: none;
+	}
+	
+.album-info h2 a {
+	color: #60b7c0;
+	text-decoration: none;
+	}
+	
+.album-info h2 a:hover {
+	text-decoration: none;
+	color: #363937;
+	}
+
+.album-info h3 {
+	display: block;
+	font-style: italic;
+	padding: 0 0 10px 0;
+	}
+
+.album-info img {
+	display: block;
+	padding: 0 20px 0 0;
+	width: 275px;
+	float:left;
+	}
+	
 	
 ol, ul {
 	list-style: none;
@@ -363,4 +422,89 @@ table {
 html[xmlns] .clearfix { display: block; }
 * html .clearfix { height: 1%; }
 
+/*-----------------------------------------------------------------------------*/
 
+/* image replacement */
+        .graphic, #prevBtn, #nextBtn, #slider1prev, #slider1next{
+            margin:0;
+            padding:0;
+            display:block;
+            overflow:hidden;
+            text-indent:-8000px;
+            }
+    /* // image replacement */
+    
+/* Easy Slider */
+	#slider ul, #slider li,
+	#slider2 ul, #slider2 li{
+		margin:0;
+		padding:0;
+		list-style:none;
+		}
+	#slider2{margin-top:1em;}
+	#slider li, #slider2 li{ 
+		/* 
+			define width and height of list item (slide)
+			entire slider area will adjust according to the parameters provided here
+		*/ 
+		width:600px;
+		height:241px;
+		overflow:hidden; 
+		}	
+	#prevBtn, #nextBtn,
+	#slider1next, #slider1prev{ 
+		display:block;
+		width:30px;
+		height:77px;
+		position:absolute;
+		left:-30px;
+		top:71px;
+		z-index:1000;
+		}	
+	#nextBtn, #slider1next{ 
+		left:696px;
+		}														
+	#prevBtn a, #nextBtn a,
+	#slider1next a, #slider1prev a{  
+		display:block;
+		position:relative;
+		width:1em;
+		height:77px;
+		background:url(images/btn_prev.gif) no-repeat 0 0;	
+		}	
+	#nextBtn a, #slider1next a{ 
+		background:url(images/btn_next.gif) no-repeat 0 0;	
+		}	
+		
+	/* numeric controls */	
+
+	ol#controls{
+		margin:1em 0;
+		padding:0;
+		height:1.5em;	
+		}
+	ol#controls li{
+		margin:0 10px 0 0; 
+		padding:0;
+		float:left;
+		list-style:none;
+		height:1.5em;
+		line-height:1em;
+		}
+	ol#controls li a{
+		float:left;
+		height:1.5em;
+		line-height:1em;
+		border:none;
+		background:#ffffff;
+		color:#ffffff;
+		padding:0 10px;
+		text-decoration:none;
+		}
+	ol#controls li.current a{
+		background:#60b7c0;
+		color:#60b7c0;
+		}
+	ol#controls li a:focus, #prevBtn a:focus, #nextBtn a:focus{outline:none;}
+	
+/* // Easy Slider */
