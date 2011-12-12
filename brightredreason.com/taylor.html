@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  	<meta charset="UTF-8">
+	<title>Bright Red Reason | Catarina</title>
+	<link rel="stylesheet" href="baseline.css" type="text/css" media="screen" />
+	<script type="text/javascript" src="jwplayer/jwplayer.js"></script>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/easySlider1.7.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){	
+			$("#slider").easySlider({
+				auto: false, 
+				continuous: true,
+				numeric: true
+			});
+		});	
+	</script>
+	<!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+  
+<body>
+<div id='header-wrapper'> <!-- start #header-wrapper -->	
+	<header id='site-header'>
+		<a href='home.html'><img alt='Bright Red Reason Logo' src='images/banner.png'><a/>
+	</header>
+	
+	<section id='next-show'>
+		<h1>Upcomming Show:</h1>
+		<h2>Friday, November 18th, 2011</h2>
+		<p><a href='http://www.mideastclub.com'>Middle East Upsatirs</a> @7PM</p>
+	</section>
+	
+	<div id='contact'><a href='contact.html'>Contact Us</a></div>
+	
+	<section id='music-player'>
+		<div id="container">Loading the player ...</div>
+		<script type="text/javascript"> jwplayer("container").setup({
+		flashplayer: "jwplayer/player.swf", 
+		file: "jwplayer/this-time.mp3", 
+		height: 24, 
+		width: 300,
+		controlbar: 'bottom',
+		});
+		</script>
+		<p>Now Playing: <em>This Time</em></p>
+	</section>
+</div> <!-- end #header-wrapper -->	
+
+<div id='menu-wrapper'> <!-- start #menu-wrapper -->	
+	<nav id='main-nav'>
+		<ul>
+			<li><a href='band.html'>Band</a></li>
+			<li><a href='music.html'>Music</a></li>
+			<li><a href='tour.html'>Tour</a></li>
+			<li><a href='merch.html'>Merch</a></li>
+		</ul>
+	</nav>
+</div> <!-- end #menu-wrapper -->	
+
+<div id='body-wrapper'>
+
+	<div id='cover-flow'>
+		<div id="slider">
+			<ul>	
+				<li><img src="images/tay/tay_01.png" alt="Main" /></li>
+				<li><img src="images/tay/tay_02.png" alt="2" /></li>
+				<li><img src="images/tay/tay_03.png" alt="3" /></li>
+			</ul>
+		</div>
+	</div>
+
+	<div id='content'> <!-- start #content-wrapper -->	
+		<section id='band-bio'>
+
+			<section class='taylor'>
+				<h1>Taylor Goodman - Drums</h1>
+				<img alt="Taylor Picture" src="images/tay/tayProfile.png">
+				<h2>Tyngsboro, MA</h2>
+				<p>Taylor's Bio Goes Here</p>
+			</section>
+		
+		</section>
+	</div> <!-- end #content-wrapper -->	
+</div>
+</body>
+</html>

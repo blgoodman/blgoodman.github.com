@@ -6,6 +6,32 @@
 	<title>Bright Red Reason | Band</title>
 	<link rel="stylesheet" href="baseline.css" type="text/css" media="screen" />
 	<script type="text/javascript" src="jwplayer/jwplayer.js"></script>
+	
+  <script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/easySlider1.7.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){	
+			$("#slider").easySlider({
+				auto: false, 
+				continuous: true,
+				numeric: true
+			});
+		});	
+	</script>
+  <script type="text/javascript" src="jplayer/jquery.jplayer.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $("#jquery_jplayer_1").jPlayer({
+        ready: function () {
+          $(this).jPlayer("setMedia", {
+            mp3: "http://brightredreason1.squarespace.com/storage/01%20This%20Time%20Live.mp3",
+          });
+        },
+        swfPath: "/js",
+        supplied: "ogv, m4v, oga, mp3"
+      });
+    });
+  </script>
 	<!--[if lt IE 9]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
@@ -51,19 +77,17 @@
 </div> <!-- end #menu-wrapper -->	
 
 <div id='body-wrapper'>
-
-	<div id='cover-flow'>
-		Band-specific Coverflow JQuery Will Go Here
-	</div>
-
+	<span class='top-break'></span>
 	<div id='content'> <!-- start #content-wrapper -->	
-		<section id='contact-us'>
-
-			<section class='contact-info'>
-				<h1>Booking and General Information:</h1>
-				<p><a href="mailto:taylorjordongoodman@gmail.com">E-mail</a></p>
-			</section>
 		
+		<section id='contact-main'>
+		<h1>Booking and General Information:</h1>
+			<section class='contact-stuff'>
+				<section class='contact-info'>
+				<p>To book Bright Red Reason or contact the Band, please send us an  <a href="mailto:taylorjordongoodman@gmail.com">E-mail</a>.</p>
+			</section>
+			</section>
+			
 		</section>
 	</div> <!-- end #content-wrapper -->	
 </div>

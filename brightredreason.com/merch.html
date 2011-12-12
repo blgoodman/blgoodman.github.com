@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  	<meta charset="UTF-8">
+	<title>Bright Red Reason | Band</title>
+	<link rel="stylesheet" href="baseline.css" type="text/css" media="screen" />
+	<script type="text/javascript" src="jwplayer/jwplayer.js"></script>
+	
+  <script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/easySlider1.7.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){	
+			$("#slider").easySlider({
+				auto: false, 
+				continuous: true,
+				numeric: true
+			});
+		});	
+	</script>
+  <script type="text/javascript" src="jplayer/jquery.jplayer.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $("#jquery_jplayer_1").jPlayer({
+        ready: function () {
+          $(this).jPlayer("setMedia", {
+            mp3: "http://brightredreason1.squarespace.com/storage/01%20This%20Time%20Live.mp3",
+          });
+        },
+        swfPath: "/js",
+        supplied: "ogv, m4v, oga, mp3"
+      });
+    });
+  </script>
+	<!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+  
+<body>
+<div id='header-wrapper'> <!-- start #header-wrapper -->	
+	<header id='site-header'>
+		<a href='home.html'><img alt='Bright Red Reason Logo' src='images/banner.png'><a/>
+	</header>
+	
+	<section id='next-show'>
+		<h1>Upcomming Show:</h1>
+		<h2>Friday, November 18th, 2011</h2>
+		<p><a href='http://www.mideastclub.com'>Middle East Upsatirs</a> @7PM</p>
+	</section>
+	
+	<div id='contact'><a href='contact.html'>Contact Us</a></div>
+	
+	<section id='music-player'>
+		<div id="container">Loading the player ...</div>
+		<script type="text/javascript"> jwplayer("container").setup({
+		flashplayer: "jwplayer/player.swf", 
+		file: "jwplayer/this-time.mp3", 
+		height: 24, 
+		width: 300,
+		controlbar: 'bottom',
+		});
+		</script>
+		<p>Now Playing: <em>This Time</em></p>
+	</section>
+</div> <!-- end #header-wrapper -->	
+
+<div id='menu-wrapper'> <!-- start #menu-wrapper -->	
+	<nav id='main-nav'>
+		<ul>
+			<li><a href='band.html'>Band</a></li>
+			<li><a href='music.html'>Music</a></li>
+			<li><a href='tour.html'>Tour</a></li>
+			<li><a href='merch.html'>Merch</a></li>
+		</ul>
+	</nav>
+</div> <!-- end #menu-wrapper -->	
+
+<div id='body-wrapper'>
+	<span class='top-break'></span>
+	<div id='content'> <!-- start #content-wrapper -->	
+		
+		<section id='merch'>
+		<h1>Bright Red Reason - Merch</h1>
+			<section class='t-shirt'>
+				<section class='shirt-info'>
+					<img alt="Give Up The Ghost T-Shirt" src="images/t-shirt-pic.png">
+					<h2>Give Up The Ghost - V-Neck T-Shirt</h2>
+					<h3>$10</h3>
+  					<p>Hand-screenprinted shirt on a black v-neck tee.</p>	
+  				</section>
+			</section>
+			
+		</section>
+	</div> <!-- end #content-wrapper -->	
+</div>
+</body>
+</html>
